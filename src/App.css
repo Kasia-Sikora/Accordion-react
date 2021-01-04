@@ -1,91 +1,96 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-$textFont: 'Alegreya Sans', sans-serif;
-$numberFont: 'Frank Ruhl Libre', sans-serif;
-$basicBorderRadius: 5px;
+:root {
+    --textFont: 'Alegreya Sans', sans-serif;
+    --numberFont: 'Frank Ruhl Libre', sans-serif;
+    --basicBorderRadius: 5px;
+}
 
 * {
-  box-sizing: border-box;
-  font-family: $textFont;
+    box-sizing: border-box;
+    font-family: var(--textFont);
 }
 
 body {
-  background-color: #F2F2F2;
-  font-size: 14px;
+    background-color: #F2F2F2;
+    font-size: 14px;
 }
 
 .Accordion-group {
-  border-radius: $basicBorderRadius;
-  padding: 0 5%;
-  margin-top: 5%;
+    border-radius: var(--basicBorderRadius);
+    padding: 0 5%;
+    margin-top: 5%;
 }
 
 .Accordion {
-  padding: 0;
-  border: 1px solid #D5D5D5;
-  background-color: white;
-  max-width: 590px;
-  margin: 0 auto;
-
-  h3 {
-    margin: 0;
     padding: 0;
-  }
+    border: 1px solid #D5D5D5;
+    background-color: white;
+    max-width: 590px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
 .Accordion:first-child {
-  border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .Accordion:last-child {
-  border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 
 .Accordion.focus {
-  width: 100%;
-  position: relative;
-  animation: onTop 0.5s ease-in-out;
-  z-index: 2;
-  transform: scale(1.02);
-  background-color: white;
-  box-shadow: 3px 3px 3px 3px #DCDCDC;
-  border-radius: $basicBorderRadius;
+    width: 100%;
+    position: relative;
+    animation: onTop 0.5s ease-in-out;
+    z-index: 2;
+    transform: scale(1.02);
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px #DCDCDC;
+    border-radius: var(--basicBorderRadius);
+}
+
+.currency {
+    font-family: var(--textFont);
+    font-size: 1em;
+}
+
+.small {
+    font-size: 0.85em;
+    color: #636568;
+    font-family: var(--textFont);
+}
+
+.availableFunds {
+    margin-left: 1em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.currency {
+    font-family: var(--textFont);
+    font-size: 1em;
+}
+
+.accountBalance {
+    font-family: var(--numberFont);
+    font-size: 1.3em;
+}
+
+.accountBalance > span:nth-child(1) {
+    font-size: 0.8em;
 }
 

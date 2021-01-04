@@ -1,0 +1,47 @@
+.accordionTitle {
+    pointer-events: none;
+    border-radius: var(--basicBorderRadius);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.accountDetails {
+    overflow: hidden;
+}
+
+.accountTitle {
+    padding: 0.3em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.3em;
+}
+
+.accountNumber {
+    font-family: var(--numberFont);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.small {
+    font-size: 0.85em;
+    color: #636568;
+    font-family: var(--textFont);
+}
+
+.availableFunds {
+    margin-left: 1em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.accountBalance {
+    font-family: var(--numberFont);
+    font-size: 1.3em;
+}
+
+.accountBalance > span:nth-child(1) {
+    font-size: 0.8em;
+}

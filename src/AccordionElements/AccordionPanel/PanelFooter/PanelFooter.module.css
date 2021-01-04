@@ -1,0 +1,49 @@
+.panelFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panelFooter > button {
+    width: 45%;
+    margin-top: 0.5em;
+    border: 1px solid #D5D5D5;
+    border-radius: var(--basicBorderRadius);
+    background: none;
+    padding: 10px 0;
+}
+
+.panelFooter > button:hover {
+    background: #e5e5e5;
+}
+
+.panelFooter > button:focus{
+    border: darkblue solid 2px;
+    outline: unset;
+}
+
+.panelFooter > button:nth-of-type(1) {
+    display: none;
+}
+
+.panelFooter > button:nth-of-type(3) {
+    background-color: #003574;
+    color: white;
+}
+
+.panelFooter > button:nth-of-type(3):hover {
+    background-color: #002d65;
+}
+
+.panelFooter > button:nth-of-type(3):focus{
+    border: black solid 2px;
+}
+
+@media only screen and (min-width: 400px) {
+    .panelFooter > button:nth-of-type(1) {
+        display: block;
+    }
+
+    .panelFooter > button {
+        width: 31%;
+    }
+}

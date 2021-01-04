@@ -1,0 +1,43 @@
+@keyframes onShow {
+    from {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.accordionPanel {
+    animation: onShow 0.3s ease-in-out;
+    margin: 0;
+    padding: 0 1em 1em 1em;
+    overflow: hidden;
+}
+
+.details {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.amount {
+    float: right;
+    margin-left: 1em;
+    font-family: 'Frank Ruhl Libre', sans-serif;
+    font-size: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.availableFunds > .accountBalance {
+    font-size: 2em;
+}
+
+.balanceSection {
+    display: none;
+}

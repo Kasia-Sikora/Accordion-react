@@ -1,0 +1,62 @@
+.details {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.amount {
+    float: right;
+    margin-left: 1em;
+    font-family: var(--numberFont);
+    font-size: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.availableFunds {
+    margin-left: 1em;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.availableFunds > .accountBalance {
+    font-size: 2em;
+}
+
+.balanceSection {
+    /*display: none;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 1em;
+    overflow: hidden;
+    border-right: 1px solid darkgray;
+}
+
+.balance {
+    display: block;
+}
+
+.currency {
+    font-family: var(--textFont);
+    font-size: 1em;
+}
+
+.small {
+    font-size: 0.85em;
+    color: #636568;
+    font-family: var(--textFont);
+}
+
+.accountBalance {
+    font-family: var(--numberFont);
+    font-size: 1.3em;
+}
+
+.accountBalance > span:nth-child(1) {
+    font-size: 0.8em;
+}
