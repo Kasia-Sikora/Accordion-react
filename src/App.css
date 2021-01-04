@@ -36,3 +36,56 @@
     transform: rotate(360deg);
   }
 }
+
+$textFont: 'Alegreya Sans', sans-serif;
+$numberFont: 'Frank Ruhl Libre', sans-serif;
+$basicBorderRadius: 5px;
+
+* {
+  box-sizing: border-box;
+  font-family: $textFont;
+}
+
+body {
+  background-color: #F2F2F2;
+  font-size: 14px;
+}
+
+.Accordion-group {
+  border-radius: $basicBorderRadius;
+  padding: 0 5%;
+  margin-top: 5%;
+}
+
+.Accordion {
+  padding: 0;
+  border: 1px solid #D5D5D5;
+  background-color: white;
+  max-width: 590px;
+  margin: 0 auto;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.Accordion:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+.Accordion:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.Accordion.focus {
+  width: 100%;
+  position: relative;
+  animation: onTop 0.5s ease-in-out;
+  z-index: 2;
+  transform: scale(1.02);
+  background-color: white;
+  box-shadow: 3px 3px 3px 3px #DCDCDC;
+  border-radius: $basicBorderRadius;
+}
+
